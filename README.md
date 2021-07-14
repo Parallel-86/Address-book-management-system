@@ -5,7 +5,7 @@ The language used Java and used the JavaFX technology.
 An address book management system
 
 Login Page:
-Can realize administrator login or user login and user resgistration.
+Can realize administrator login or user login and user registration.
 
 The User Page:
 User login and registration can be realized,and the user can also modify the information and query by name(fuzzy search).The user can see information about everyone in the 
