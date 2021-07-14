@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="700.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.parallel.module.administrator.AdministratorMain">
+    <children>
+        <TabPane layoutX="8.0" layoutY="111.0" prefHeight="530.0" prefWidth="984.0" tabClosingPolicy="UNAVAILABLE">
+            <tabs>
+                <Tab text="用户信息">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                            <children>
+                                <TableView fx:id="stuTab" layoutX="1.0" layoutY="-3.0" prefHeight="493.0" prefWidth="984.0">
+                                    <columns>
+                                        <TableColumn fx:id="s_sid" prefWidth="223.0" text="用户ID" />
+                                        <TableColumn fx:id="s_name" prefWidth="111.0" text="姓名" />
+                                        <TableColumn fx:id="s_sex" prefWidth="75.0" text="性别" />
+                                        <TableColumn fx:id="s_phone" prefWidth="174.0" text="联系方式" />
+                                        <TableColumn fx:id="s_address" prefWidth="243.0" text="地址" />
+                              <TableColumn fx:id="s_state" prefWidth="66.0" text="是否修改" />
+                                    </columns>
+                                </TableView>
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </Tab>
+                <Tab text="管理员信息">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                            <children>
+                                <TableView fx:id="teaTab" prefHeight="496.0" prefWidth="984.0">
+                                    <columns>
+                                        <TableColumn fx:id="t_id" prefWidth="256.0" text="管理员ID" />
+                                        <TableColumn fx:id="t_name" prefWidth="118.0" text="姓名" />
+                                        <TableColumn fx:id="t_sex" prefWidth="125.0" text="性别" />
+                                        <TableColumn fx:id="t_phone" prefWidth="191.0" text="联系方式" />
+                                    </columns>
+                                </TableView>
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </Tab>
+            </tabs>
+        </TabPane>
+        <TextField layoutX="39.0" layoutY="45.0" prefHeight="39.0" prefWidth="214.0" promptText="输入查询的关键字">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </TextField>
+        <Button layoutX="264.0" layoutY="45.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="72.0" text="搜索" />
+        <Button layoutX="409.0" layoutY="46.0" mnemonicParsing="false" onAction="#backLogin" prefHeight="39.0" prefWidth="82.0" text="返回" />
+        <Button layoutX="520.0" layoutY="46.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="91.0" text="学生详情" />
+        <Button layoutX="629.0" layoutY="46.0" mnemonicParsing="false" onAction="#inputScore" prefHeight="39.0" prefWidth="91.0" text="成绩录入" />
+        <Button layoutX="747.0" layoutY="46.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="102.0" text="成绩修改" />
+        <Button layoutX="873.0" layoutY="45.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="102.0" text="删除学生" />
+    </children>
+</AnchorPane>

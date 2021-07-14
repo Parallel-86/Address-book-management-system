@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="634.0" prefWidth="1162.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.parallel.module.user.UserMain">
+   <children>
+      <ImageView fitHeight="639.0" fitWidth="1162.0" layoutY="-3.0" opacity="0.68" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../image/backgroundImage1.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="334.0" layoutY="3.0" prefHeight="54.0" prefWidth="495.0" text="通    讯    信    息    查    询">
+         <font>
+            <Font size="36.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="0.8592233009708738" endY="1.0" startX="1.0">
+               <stops>
+                  <Stop color="#2b00fa" />
+                  <Stop color="#2b00fa" offset="0.006896551724137931" />
+                  <Stop color="WHITE" offset="0.48017241379310344" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Button layoutX="679.0" layoutY="229.0" mnemonicParsing="false" onAction="#findByName" prefHeight="39.0" prefWidth="69.0" style="-fx-background-radius: 20; -fx-background-color: #00cc99;" text="搜 索">
+         <font>
+            <Font size="17.0" />
+         </font></Button>
+      <TextField fx:id="keyWord" layoutX="420.0" layoutY="229.0" prefHeight="29.0" prefWidth="238.0" promptText="输入查询关键词" style="-fx-background-radius: 10;">
+         <font>
+            <Font size="19.0" />
+         </font></TextField>
+      <Button layoutX="957.0" layoutY="228.0" mnemonicParsing="false" onAction="#updateInformation" opacity="0.95" prefHeight="9.0" prefWidth="153.0" style="-fx-background-radius: 10;" text="修 改 信 息">
+         <font>
+            <Font size="20.0" />
+         </font></Button>
+      <TabPane layoutX="57.0" layoutY="279.0" prefHeight="340.0" prefWidth="1053.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab style="-fx-background-radius: 5;" text="用户信息">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="162.0" prefWidth="1076.0">
+                     <children>
+                        <TableView fx:id="stuTab" layoutY="-3.0" prefHeight="306.0" prefWidth="1053.0">
+                          <columns>
+                            <TableColumn fx:id="s_sid" prefWidth="258.0000305175781" style="-fx-background-radius: 10;" text="用户ID" />
+                            <TableColumn fx:id="s_name" minWidth="0.0" prefWidth="120.0" style="-fx-background-radius: 10;" text="姓名" />
+                              <TableColumn fx:id="s_sex" prefWidth="52.0" style="-fx-background-radius: 10;" text="性别" />
+                              <TableColumn fx:id="s_address" prefWidth="304.0" style="-fx-background-radius: 10;" text="地址" />
+                              <TableColumn fx:id="s_phone" prefWidth="225.0" style="-fx-background-radius: 10;" text="联系方式" />
+                              <TableColumn fx:id="s_state" prefWidth="92.0" style="-fx-background-radius: 10;" text="信息" />
+                          </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+      <Button layoutX="964.0" layoutY="30.0" mnemonicParsing="false" onAction="#backMain" prefHeight="54.0" prefWidth="164.0" style="-fx-background-radius: 20;" text="返  回">
+         <font>
+            <Font size="23.0" />
+         </font></Button>
+      <Label fx:id="stuLab" layoutX="14.0" layoutY="57.0" prefHeight="143.0" prefWidth="841.0" text="欢迎：刘小丽 用戶登录用戶信息查询系统 ，请选择：">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

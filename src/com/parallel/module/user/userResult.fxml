@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="559.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.parallel.module.user.UserResult">
+    <children>
+        <ImageView fitHeight="565.0" fitWidth="1000.0" layoutY="-3.0" opacity="0.28" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../image/img09.jpg" />
+            </image>
+        </ImageView>
+        <Label layoutX="330.0" layoutY="21.0" prefHeight="102.0" prefWidth="419.0" text="用 戶 信 息 修 改 结 果" textFill="#bc1313">
+            <font>
+                <Font name="System Bold" size="36.0" />
+            </font>
+        </Label>
+        <Label layoutX="352.0" layoutY="223.0" prefHeight="36.0" prefWidth="91.0" text="性别：">
+            <font>
+                <Font name="System Bold" size="24.0" />
+            </font>
+        </Label>
+        <Label layoutX="352.0" layoutY="285.0" prefHeight="36.0" prefWidth="91.0" text="电话：">
+            <font>
+                <Font name="System Bold" size="24.0" />
+            </font>
+        </Label>
+        <Label layoutX="352.0" layoutY="171.0" prefHeight="36.0" prefWidth="91.0" text="ID：">
+            <font>
+                <Font name="System Bold" size="24.0" />
+            </font>
+        </Label>
+        <Label fx:id="sid" layoutX="455.0" layoutY="165.0" prefHeight="47.0" prefWidth="419.0" textFill="#e3340e">
+            <font>
+                <Font name="System Bold" size="24.0" />
+            </font>
+        </Label>
+        <Label layoutX="352.0" layoutY="349.0" prefHeight="36.0" prefWidth="91.0" text="住址：">
+            <font>
+                <Font name="System Bold" size="24.0" />
+            </font>
+        </Label>
+        <Label layoutX="352.0" layoutY="123.0" prefHeight="36.0" prefWidth="91.0" text="姓 名：">
+            <font>
+                <Font name="System Bold" size="24.0" />
+            </font>
+        </Label>
+        <Label fx:id="name" layoutX="441.0" layoutY="118.0" prefHeight="47.0" prefWidth="197.0" textFill="#e3340e">
+            <font>
+                <Font name="System Bold" size="24.0" />
+            </font>
+        </Label>
+        <Button layoutX="570.0" layoutY="440.0" mnemonicParsing="false" onAction="#backMain" prefHeight="61.0" prefWidth="353.0" style="-fx-background-color: blue; -fx-background-radius: 20;" text="返回主页面" textFill="#e1d6d6">
+            <font>
+                <Font size="24.0" />
+            </font>
+        </Button>
+      <TextField fx:id="sex" layoutX="443.0" layoutY="223.0" prefHeight="47.0" prefWidth="232.0" promptText="请输入你的性别" style="-fx-background-radius: 10;">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="phone" layoutX="443.0" layoutY="285.0" prefHeight="47.0" prefWidth="232.0" promptText="请输入你的电话" style="-fx-background-radius: 10;">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="address" layoutX="443.0" layoutY="344.0" prefHeight="47.0" prefWidth="232.0" promptText="请输入你的住址" style="-fx-background-radius: 10;">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </TextField>
+      <Button layoutX="71.0" layoutY="440.0" mnemonicParsing="false" onAction="#updateInformation" prefHeight="61.0" prefWidth="353.0" style="-fx-background-color: blue; -fx-background-radius: 20;" text="确认修改" textFill="#e1d6d6">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+    </children>
+</AnchorPane>
